@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///C:/Users/Deeps/Downloads/TAN_Nimbus/TAN-NIMBUS.otf">
+    <title>Cookies and cream</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'Alata';
+            src: url('TAN-NIMBUS.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'head';
+            src: url('Alata-Regular.ttf') format('truetype');
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #FEFDEB;
+            overflow-x: hidden;
+            overflow-y: auto;
+            min-height: 100vh;
+            
+        }
+        .word1 { left: 580px; }
+        .word2 { left: 635px; }
+        .word3 { left: 705px; }
+        .word4 { left: 780px; }
+        .cookies-text {top: 250px; left: 200px; z-index: 20px;}
+
+        p {
+            color: rgba(254, 253, 235, 0.70);
+            font-size: 20px;
+            font-family: 'Alata', sans-serif;
+            font-weight: 150;
+            word-wrap: break-word;
+            overflow: hidden;
+
+        }
+        .positioned-element {
+            position: absolute;
+            background-color: #1B0A00;
+            padding: 20px 30px;
+            border-radius: 63px;
+            box-shadow: 0px 11px 16.200000762939453px  rgba(254, 253, 235, 0.70);
+            margin-top: 0px;
+            backdrop-filter: blur(15.20px);
+            text-align: center;
+            left: 1000px;
+            bottom: 300px;
+        }
+        a {
+            color: #FEFDEB;
+            font-family: 'Alata', sans-serif;
+            background-color: transparent;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .header-font{
+            color: #141204;
+            font-family: 'head', sans-serif;
+            background-color: transparent;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 18px;
+            position:fixed;
+            height: auto;
+            top: 40px;
+            text-align: center;
+        }
+        .cookies-img {
+            width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: -930px; 
+            margin-top: 180px;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .cone-img {
+            width: 40%;
+            height: auto;
+            margin-top: 200px;
+            margin-bottom: -150px;
+            margin-left: -990px; 
+            position: absolute;
+ 
+            transition: all 1s ease;
+        }
+        .logo-img {
+            width: 2%;
+            height: auto;
+            position: fixed;
+            top: 40px;
+            left: 40px;
+
+            transition: all 1s ease;
+        }
+        .oreo-img{
+            width: 100%;
+            height: auto; 
+            display: block;
+
+            position: absolute;
+        }
+        .Title-text{
+            color: #141204;
+            font-family: 'Alata', sans-serif;
+            background-color: transparent;
+            font-size: 55px;
+            position: absolute;
+            text-decoration: none;
+            white-space: nowrap;
+            word-wrap: break-word;
+
+            text-align: right;
+        }
+        #menu-links {
+        position: fixed;
+        top: 40px; }
+
+        .cone-small{
+            width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 0px; 
+            margin-top: 460px;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .icecream-vanilla{
+            width: 20%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 10px; 
+            margin-top: 340px;
+            position: absolute;
+            transition: all 1s ease;
+        }
+        .cone-side{
+            width: 30%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 990px; 
+            margin-top: 460px;
+            position: absolute;
+
+            transition: all 1s ease;
+        }
+        .icecream-choco{
+            width: 18%;
+            height: auto;
+            background-color: transparent;
+            margin-left: 1010px; 
+            margin-top: 340px;
+            position: absolute;
+            transition: all 1s ease;
+        }
+        .cone-img,
+        .cone-small,
+        .cone-side {
+            /* ... other styles ... */
+            z-index: 2; /* Layer 2: Cones */
+        }
+
+        .cookies-img,
+        .icecream-vanilla,
+        .icecream-choco {
+            height: auto;
+            /* ... other styles ... */
+            z-index: 3; /* Layer 3: Ice Cream Images */
+        }
+
+        .cookies-text,
+        .positioned-element {
+            /* ... other styles ... */
+            z-index: 3; /* Layer 4: Text and Order Now Box */
+        }
+
+
+
+        .Title-text {
+            /* ... other styles ... */
+            z-index: 3; /* Layer 5: Menu, Order, Location, Contact */
+        }
+
+        .header-font,
+        #menu-links,
+        .logo-img {
+            width: 2%;
+            height: auto;
+            /* ... other styles ... */
+            z-index: 6; /* Layer 6: Logo */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container"> 
+        <div class="slides">
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="#Menu"class="header-font word1">Menu&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Order"class="header-font word2">&ThickSpace;Orders&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Prices"class="header-font word3">&ThickSpace;Location&ThickSpace;&ThickSpace;</a></li>
+                            <li><a href="#Contactus"class="header-font word4">&ThickSpace;Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="Title-text cookies-text">
+                    Cookies and <br>cream </br>
+                </p>
+                <img src="photos/cone big.png" class="cone-img">
+                <img src="photos/cookie and cream (1).png" class="cookies-img">
+                <img src="photos/logo.png" class="logo-img">
+                <img src="photos/cone small.png" class="cone-small">
+                <img src="photos/vanilla.png" class="icecream-vanilla">
+                <img src="photos/cone small.png" class="cone-side">
+                <img src="photos/choco.png" class="icecream-choco">
+                <img src="photos/Rectangle 2.png" style="top: -60px; position: fixed; z-index: 4;">
+                <img src="photos/Background.jpg" style="z-index: 1px; width: 100%;">
+                
+                        
+<!--scroll to clicked-->
+<div class="slides">
+    <section id="Home">
+    <p class="Title-text">
+    
+
+    <!--Images-->
+    <div class="positioned-element">
+        <p>
+            <a href="#Order">&NonBreakingSpace;&NonBreakingSpace;Order Now&NonBreakingSpace;&NonBreakingSpace;</a>            
+        </p>
+    </div>
+    <a href="index.html" id="logo-link">
+        <img src="photos/logo.png" class="logo-img">
+    </a>
+
+</div>
+
+    </p>
+</section>
+</div>
+<div class="slides">
+    <section id="Menu">
+        <img src="photos/menu.png" style="width: 100%; height: auto; margin-top: 0px; margin-left: 0px;">
+    </section>
+</div>
+
+<div class="slides">
+    <section id="Order">
+    <p class="Title-text">
+        <form id="myForm" style="width: 80%; height: auto; margin-top: 200px; margin-left: 140px;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+    
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </p>
+</section>
+</div>
+<div class="slides">
+    <section id="Prices">
+    <p class="Title-text">
+        Location
+    </p>
+</section>
+</div>
+<div class="slides">
+    <section id="Contactus">
+    <p class="Title-text">
+        Contact us
+    </p>
+</section>
+</div>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script>
+    function submitForm() {
+        var formData = new FormData(document.getElementById('myForm'));
+
+        fetch('YOUR_DEPLOYED_WEB_APP_URL', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            // Handle success or error
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+</div>
+</body>
+</html>

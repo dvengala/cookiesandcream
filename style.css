@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    .container{
+       width: 100%;
+       height: 100vh;
+
+    }
+    .slides{
+        width: 100%;
+       height: 110vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .animated-element {
+        opacity: 0;
+        transform: translateX(-100%); /* Initial state, hidden outside the viewport */
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transition effects */
+    }
+    
+    .animated-element.animate {
+        opacity: 1;
+        transform: translateX(0); /* Visible when the 'animate' class is added, sliding in */
+    }
+    .logo-img-clicked {
+        animation: yourAnimationName 0.5s ease; /* Adjust the animation properties */
+    }
+    
+    @keyframes yourAnimationName {
+        /* Define your animation keyframes */
+        /* For example, you can use opacity or transform */
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+}
